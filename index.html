@@ -6,21 +6,59 @@
     <title>Bruce Mini DIY - X8Fluid</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             max-width: 800px;
             margin: 40px auto;
             padding: 0 20px;
             line-height: 1.6;
-            color: #333;
+            color: #e0e0e0;
+            background-color: #121212; /* Siber güvenlik temasına uygun koyu arka plan */
+        }
+        h1 {
+            color: #00ff66; /* Hacker yeşili ana başlık */
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #00ffff; /* Alt başlıklar için cyan rengi */
+            margin-top: 30px;
+        }
+        h3 {
+            color: #00ff66;
+        }
+        p {
+            font-size: 1.05rem;
+            color: #b0b0b0;
+        }
+        /* Pin bilgilerini şık bir kutu içine almak için */
+        .pin-container {
+            background-color: #1e1e1e;
+            padding: 20px;
+            border-left: 4px solid #00ff66;
+            border-radius: 6px;
+            font-family: 'Courier New', Courier, monospace; /* Kod benzeri yazı tipi */
+            margin: 20px 0;
+        }
+        .pin-section {
+            margin-bottom: 15px;
+        }
+        .pin-section strong {
+            color: #00ffff;
+            display: block;
+            margin-bottom: 5px;
         }
         .photo-container {
-            margin-top: 25px; /* Fotoğrafı bir alt paragrafa açmak için boşluk */
+            margin-top: 40px;
+            border-top: 1px solid #333;
+            padding-top: 20px;
         }
         img {
             max-width: 100%;
             height: auto;
             border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.5);
+            border: 1px solid #444;
+            margin-top: 15px;
         }
     </style>
 </head>
@@ -29,39 +67,54 @@
     <h1>Bruce Mini DIY - X8Fluid</h1>
     
     <p>
-        Bruce Mini DIY yapabilmeniz için herşeyi bu repoda bulabilirsiniz.
-ESP32 WROOM Pinleri:
-     Butonlar:
-
-     OK PIN: 5
-     YUKARI(UP) PIN: 15
-     AŞAĞI(DOWN) PIN: 14
-
-     Ekran(1.14 inç 135x240 ST7789V2):
-
-    TFT_CS=13
-    TFT_DC=2
-    TFT_RST=4
-    TFT_MOSI=23
-    TFT_SCLK=18
-    TFT_BL=22
-
-     Varsayılan I2C Pinleri:
-     SDA: 21
-     SCL: 22
-
-     SPI Pinleri:
-
-    -SCK_PIN=32
-    -MOSI_PIN=27
-    -MISO_PIN=12
-    -SS_PIN=33
-      
+        Bruce Mini DIY cihazınızı sorunsuz bir şekilde yapabilmeniz ve çalıştırabilmeniz için ihtiyacınız olan tüm donanım, pin şeması ve dosyaları bu repoda bulabilirsiniz.
     </p>
 
+    <h2>🔌 ESP32 WROOM Pin Şeması</h2>
+    
+    <div class="pin-container">
+        <div class="pin-section">
+            <strong>🎛️ Butonlar:</strong>
+            • OK PIN: 5<br>
+            • YUKARI (UP) PIN: 15<br>
+            • AŞAĞI (DOWN) PIN: 14
+        </div>
+
+        <div class="pin-section">
+            <strong>📺 Ekran (1.14 inç 135x240 ST7789V2):</strong>
+            • TFT_CS = 13<br>
+            • TFT_DC = 2<br>
+            • TFT_RST = 4<br>
+            • TFT_MOSI = 23<br>
+            • TFT_SCLK = 18<br>
+            • TFT_BL = 22
+        </div>
+
+        <div class="pin-section">
+            <strong>🔄 Varsayılan I2C Pinleri:</strong>
+            • SDA: 21<br>
+            • SCL: 22
+        </div>
+
+        <div class="pin-section">
+            <strong>📡 SPI Pinleri:</strong>
+            • SCK_PIN = 32<br>
+            • MOSI_PIN = 27<br>
+            • MISO_PIN = 12<br>
+            • SS_PIN = 33
+        </div>
+    </div>
+
+
+    <h2>🚀 Kurulum ve Çalıştırma</h2>
+    <p>
+        Yüklediğim <code>bin files</code> klasöründeki firmware dosyasını ESP32 aracınızla flaşlayarak direkt kullanmaya başlayabilirsiniz. Detaylı flaşlama ayarları klasör içindeki görselde mevcuttur.
+    </p>
+
+
     <div class="photo-container">
-        <h3>Wiki</h3>
-        <p>Bu basit devre ile bir Bruce yazılımını çalıştırabilirsiniz.</p>
+        <h2>📚 Wiki & Bağlantı Şeması</h2>
+        <p>Aşağıdaki basit devre şemasını takip ederek Bruce yazılımını stabil bir şekilde çalıştırabilirsiniz:</p>
         
         <img src="photos/Bruce DIY Github.png" alt="Devre Şeması">
     </div>
