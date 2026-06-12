@@ -56,6 +56,6 @@ Aşağıda, montajı tamamlanmış ve stabil çalışan Bruce Mini DIY cihazına
 ![Bruce Mini DIY](photos/Brucefoto.jpeg)
 
 ### 📚 Devre Şeması
-Aşağıdaki basit devre şemasını takip ederek Bruce yazılımını cihazınızda stabil bir şekilde çalıştırabilirsiniz:
-
+Aşağıdaki basit devre şemasını takip ederek Bruce yazılımını sizde yapabilirisiniz, ayrıca devreye On/off yani açma kapama 
+switch anahtar eklememişim. 5V ile Regülator çıkış arasına On/OFF switch takmanızı öneririm.
 ![Devre Şeması](photos/Bruce%20DIY%20Github.png)
