@@ -6,7 +6,7 @@ Cihazınızı sorunsuz bir şekilde yapabilmeniz ve çalıştırabilmeniz için 
 
 ---
 
-## 🔌 ESP32 WROOM Pin Şeması
+## 🔌 Bruce Pin Şeması (BruceDIYPins.txt dosyasına bakabilirsiniz.)
 
 <blockquote>
   <strong>🎛️ Butonlar:</strong><br>
