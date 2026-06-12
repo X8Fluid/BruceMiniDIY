@@ -43,7 +43,8 @@ Cihazınızı sorunsuz bir şekilde yapabilmeniz ve çalıştırabilmeniz için 
 
 ## 🚀 Kurulum ve Çalıştırma
 
-Yüklediğim `bin files` klasöründeki firmware dosyasını ESP32 aracınızla flaşlayarak direkt kullanmaya başlayabilirsiniz. Detaylı flaşlama ayarları klasör içindeki görselde mevcuttur.
+Yüklediğim `bin files` klasöründeki firmware dosyasını ESP32 aracınızla flaşlayarak direkt kullanmaya başlayabilirsiniz. 
+Flaşlama ayarını(0x0 yapıp o şekilde flaşlamanız gerekiyor.)
 
 ---
 
@@ -54,7 +55,7 @@ Aşağıda, montajı tamamlanmış ve stabil çalışan Bruce Mini DIY cihazına
 
 ![Bruce Mini DIY](photos/Brucefoto.jpeg)
 
-### 📚 Wiki & Devre Şeması
+### 📚 Devre Şeması
 Aşağıdaki basit devre şemasını takip ederek Bruce yazılımını cihazınızda stabil bir şekilde çalıştırabilirsiniz:
 
 ![Devre Şeması](photos/Bruce%20DIY%20Github.png)
